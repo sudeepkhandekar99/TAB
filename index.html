@@ -1,60 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- ===== CSS ===== -->
-        <link rel="stylesheet" href="assets/css/styles.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>TAB</title>
-    </head>
-    <body>
-        <header class="header">
-            <a href="#" class="header__logo">The Aalsi Blog</a>
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="assets/css/styles.css">
 
-            <ion-icon name="menu-outline" class="header__toggle" id="nav-toggle"></ion-icon>
+    <title>TAB</title>
+</head>
 
-            <nav class="nav" id="nav-menu">
-                <div class="nav__content bd-grid">
+<body>
+    <header class="header">
+        <a href="#" class="header__logo">The Aalsi Blog</a>
 
-                    <ion-icon name="close-outline" class="nav__close" id="nav-close"></ion-icon>
-    
-                    <div class="nav__perfil">
-                        <div class="nav__img">
-                            <img src="assets/img/perfil.png" alt="">
-                        </div>
-                        
-                        <div>
-                            <a href="#" class="nav__name">The Aalsi Blog</a>
-                            <span class="nav__profesion">Kushagra's Blog</span>
-                        </div>
+        <ion-icon name="menu-outline" class="header__toggle" id="nav-toggle"></ion-icon>
+
+        <nav class="nav" id="nav-menu">
+            <div class="nav__content bd-grid">
+
+                <ion-icon name="close-outline" class="nav__close" id="nav-close"></ion-icon>
+
+                <div class="nav__perfil">
+                    <div class="nav__img">
+                        <img src="assets/img/perfil.png" alt="">
                     </div>
-    
-                    <div class="nav__menu">
-                        <ul class="nav__list">
-                            <li class="nav__item"><a href="#" class="nav__link active">Home</a></li>
-                            <li class="nav__item"><a href="#" class="nav__link">CP</a></li>
-                            <li class="nav__item"><a href="#" class="nav__link">ML</a></li>
-                            <li class="nav__item"><a href="#" class="nav__link">Security</a></li>
-                            <li class="nav__item"><a href="#" class="nav__link">Trivia</a></li>
-                            <li class="nav__item"><a href="#" class="nav__link">All Tags</a></li>
-                            <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
-                        </ul>
-                    </div>
-    
-                    <div class="nav__social">
-                        <a href="#" class="nav__social-icon"><ion-icon name="logo-linkedin"></ion-icon></a>
-                        <a href="#" class="nav__social-icon"><ion-icon name="logo-github"></ion-icon></a>
+
+                    <div>
+                        <a href="#" class="nav__name">The Aalsi Blog</a>
+                        <span class="nav__profesion">Kushagra's Blog</span>
                     </div>
                 </div>
-            </nav>
-        </header>
 
-        <!-- ===== IONICONS ===== -->
-        <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+                <div class="nav__menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">CP</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">ML</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Security</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Trivia</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">All Tags</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
 
-        <!--===== MAIN JS =====-->
-        <script src="assets/js/main.js"></script>
-    </body>
+                <div class="nav__social">
+                    <a href="#" class="nav__social-icon">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </a>
+                    <a href="#" class="nav__social-icon">
+                        <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- partial:index.partial.html -->
+    <ul class="cards">
+        <li class="cards__item">
+            <div class="card">
+                <div class="card__image card__image--fence"></div>
+                <div class="card__content">
+                    <div class="card__title">Flex</div>
+                    <p class="card__text">This is the shorthand for flex-grow, flex-shrink and flex-basis combined. The
+                        second and third parameters (flex-shrink and flex-basis) are optional. Default is 0 1 auto. </p>
+                    <button class="btn btn--block card__btn">Button</button>
+                </div>
+            </div>
+        </li>
+        <li class="cards__item">
+            <div class="card">
+                <div class="card__image card__image--river"></div>
+                <div class="card__content">
+                    <div class="card__title">Flex Grow</div>
+                    <p class="card__text">This defines the ability for a flex item to grow if necessary. It accepts a
+                        unitless value that serves as a proportion. It dictates what amount of the available space
+                        inside the flex container the item should take up.</p>
+                    <button class="btn btn--block card__btn">Button</button>
+                </div>
+            </div>
+        </li>
+        <li class="cards__item">
+            <div class="card">
+                <div class="card__image card__image--record"></div>
+                <div class="card__content">
+                    <div class="card__title">Flex Shrink</div>
+                    <p class="card__text">This defines the ability for a flex item to shrink if necessary. Negative
+                        numbers are invalid.</p>
+                    <button class="btn btn--block card__btn">Button</button>
+                </div>
+            </div>
+        </li>
+        <li class="cards__item">
+            <div class="card">
+                <div class="card__image card__image--flowers"></div>
+                <div class="card__content">
+                    <div class="card__title">Flex Basis</div>
+                    <p class="card__text">This defines the default size of an element before the remaining space is
+                        distributed. It can be a length (e.g. 20%, 5rem, etc.) or a keyword. The auto keyword means
+                        "look at my width or height property."</p>
+                    <button class="btn btn--block card__btn">Button</button>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <!-- partial -->
+
+    <!-- ===== IONICONS ===== -->
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+
+    <!--===== MAIN JS =====-->
+    <script src="assets/js/main.js"></script>
+</body>
+
 </html>
